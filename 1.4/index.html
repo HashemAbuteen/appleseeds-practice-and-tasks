@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Layout - First Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My First Web Page</h1>
+      <h2>Links to the other exersices :</h2>
+      <nav>
+        <a href="../1.1/">Semantic</a> | <a href="../1.2/">Lists</a> |
+        <a href="../1.3/">Tables</a>
+      </nav>
+      <h2>Navigate in this page</h2>
+      <nav>
+        <a href="#my-image">my image</a> | <a href="#about-me">about me</a> |
+        <a href="#my-links">my links</a>
+      </nav>
+    </header>
+    <main>
+      <figure id="my-image">
+        <img src="imgs/me.png" alt="my profile picture" width="150" />
+        <figcaption>my picture on my graduation day</figcaption>
+      </figure>
+      <section id="about-me">
+        <h2>About Me</h2>
+        <h3>Name</h3>
+        <p>Hashem Abuteen</p>
+        <h3>Work</h3>
+        <p>Developer</p>
+      </section>
+      <section class="my-links">
+        <h2>My Links</h2>
+        <a class="image-link" href="https://www.facebook.com/hashem.abuteen">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/2048px-Facebook_f_logo_%282021%29.svg.png"
+            alt="Facebook Icon"
+            width="32"
+            height="32"
+          />
+        </a>
+        <a
+          class="image-link"
+          href="https://www.linkedin.com/in/hashem-abuteen/"
+        >
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/linkedin-icon.svg"
+            alt="LinkedIn Icon"
+            width="32"
+            height="32"
+          />
+        </a>
+        <a class="image-link" href="https://github.com/HashemAbuteen">
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/github-icon.svg"
+            alt="GitHub Icon"
+            width="32"
+            height="32"
+          />
+        </a>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
