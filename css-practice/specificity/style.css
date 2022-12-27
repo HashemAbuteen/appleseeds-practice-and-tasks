@@ -1,0 +1,29 @@
+.class {
+    color: brown;
+}
+
+h1 {
+    color: red;
+}
+
+/* 12 points */
+p em.cq { 
+    color : blue;
+}
+
+/* 3 points */
+main p em {
+    color:red;
+}
+
+/* 101 */
+main#m1 {
+    color: green;
+}
+
+/* 112 */
+p#p1 em.c1 {
+    color:bisque;
+
+}
+
