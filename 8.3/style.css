@@ -1,0 +1,29 @@
+div {
+    border: 3px black solid;
+    position: absolute;
+    background-color: white;
+}
+#div-1{
+    height: 200px;
+    width: 200px;
+
+}
+#div-2{
+    height: 200px;
+    width: 200px;
+    top:100px;
+    left:100px;
+    z-index: 1;
+}
+#div-3{
+    height: 150px;
+    width: 500px;
+    top: 300px;
+    z-index: 2;
+}
+#div-4{
+    height: 500px;
+    width: 75px;
+    left: 400px;
+    z-index: 3;
+}
