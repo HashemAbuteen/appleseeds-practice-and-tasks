@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Layout - First Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="main-heading">My First Web Page</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a class="main-nav-link" href="../1.1/">Semantic</a></li>
+          <li><a class="main-nav-link" href="../1.2/">Lists</a></li>
+          <li><a class="main-nav-link" href="../1.3/">Tables</a></li>
+        </ul>
+      </nav>
+      <h2 class="secondory-nav-heading">Navigate in this page</h2>
+      <nav class="secondary-nav">
+        <a class="secondary-nav-link" href="#my-image">my image</a> |
+        <a class="secondary-nav-link" href="#about-me">about me</a> |
+        <a class="secondary-nav-link" href="#my-links">my links</a>
+      </nav>
+    </header>
+    <main>
+      <figure class="profile-picture-figure" id="my-image">
+        <img
+          class="profile-picture"
+          src="imgs/me.png"
+          alt="my profile picture"
+          width="150"
+        />
+        <figcaption class="profile-picture-caption">
+          my picture on my graduation day
+        </figcaption>
+      </figure>
+      <section id="about-me">
+        <h2 class="section-heading">About Me</h2>
+        <h3 class="section-subheading">Name</h3>
+        <p class="section-content">Hashem Abuteen</p>
+        <h3 class="section-subheading">Work</h3>
+        <p class="section-content">Developer</p>
+      </section>
+      <section class="my-links">
+        <h2 class="section-heading">My Links</h2>
+        <a class="image-link" href="https://www.facebook.com/hashem.abuteen">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/2048px-Facebook_f_logo_%282021%29.svg.png"
+            alt="Facebook Icon"
+            width="32"
+            height="32"
+          />
+        </a>
+        <a
+          class="image-link"
+          href="https://www.linkedin.com/in/hashem-abuteen/"
+        >
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/linkedin-icon.svg"
+            alt="LinkedIn Icon"
+            width="32"
+            height="32"
+          />
+        </a>
+        <a class="image-link" href="https://github.com/HashemAbuteen">
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/github-icon.svg"
+            alt="GitHub Icon"
+            width="32"
+            height="32"
+          />
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
