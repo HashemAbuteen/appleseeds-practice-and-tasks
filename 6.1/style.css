@@ -1,0 +1,39 @@
+body{
+    width: 50vw;
+    margin: auto;
+}
+body *{
+    margin: 1% 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: orange;
+    border: black 1px solid;
+    margin: auto;
+    text-align: center;
+
+}
+main {
+    background-color: purple;
+    border: black 1px solid;
+    float: right;
+    width: 69%;
+    text-align: right;
+    margin-left: 1%;
+
+}
+aside {
+    background-color: green;
+    border: black 1px solid;
+    float: left;
+    width: 29%;
+    text-align: left;
+    margin-right: 1%;
+}
+footer {
+    background-color: blue;
+    border: black 1px solid;
+    text-align: center;
+    clear: both;
+    margin: auto;  
+}
