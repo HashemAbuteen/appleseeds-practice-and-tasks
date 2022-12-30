@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: cornflowerblue;
+    font-size: large;
+}
+form {
+    background-color: white;
+    max-width: 400px;
+    padding: 5%;
+    margin:auto;
+    margin-top: 5rem;
+
+}
+footer{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+form h1,form p {
+    text-align: center;
+}
+
+p {
+    font-size: 13px;
+}
+footer {
+    font-size: 14px;
+}
+
+
+form section {
+    margin-top: 1rem;
+}
+form button {
+    display: block;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 1rem auto;
+    font-size: large;
+    color: white;
+    background-color: springgreen;
+    cursor: pointer;
+}
+
+form label {
+    display: block;
+    text-align: left;
+}
+form input{
+    width: 100%;
+    padding: 0.2rem;
+    border: 1px solid #666;
+    border-radius: 5px;
+}
+a {
+    text-decoration: none;
+}
