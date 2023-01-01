@@ -1,0 +1,13 @@
+p {
+    font-size: xx-large;
+}
+@media(max-width: 770px){
+    p {
+        font-size: large;
+    }
+}
+@media(max-width:500px){
+    p{
+        font-size: small;
+    }
+}
