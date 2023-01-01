@@ -1,0 +1,11 @@
+:root {
+    --text-multiplier: 1;
+}
+@media (min-width:700px) {
+    :root {
+        --text-multiplier: 1.5;
+    }
+}
+h1 {
+    font-size: calc(2em * var(--text-multiplier));
+}
