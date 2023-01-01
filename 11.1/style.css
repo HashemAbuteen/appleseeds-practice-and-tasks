@@ -1,0 +1,19 @@
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #888;
+}
+main div {
+    height: 100px;
+    width: 100px;
+}
+main div:nth-child(1) {
+    background-color: green;
+}
+main div:nth-child(2){
+    background-color: blue;
+}
+main div:nth-child(3){
+    background-color: red;
+}
