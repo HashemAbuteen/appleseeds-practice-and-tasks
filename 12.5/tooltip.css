@@ -27,6 +27,7 @@ body {
     top: -0.5em;
     left: 0.8em;
     border: 10px solid black;
+    border-left: 0px ;
     border-right-color: transparent;
     border-left-color: transparent;
     border-bottom-color: transparent;
