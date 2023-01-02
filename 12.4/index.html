@@ -29,27 +29,27 @@
         border: red solid 3px;
         position: relative;
       }
-      p::before {
+      p::before,
+      p::after {
         content: "";
+        position: absolute;
+        margin: auto;
+      }
+      p::before {
         width: calc(100% - 30px);
         height: 100%;
-        position: absolute;
         right: 0;
         left: 0;
         bottom: -3px;
-        margin: auto;
         border-top: black solid 3px;
         border-bottom: black solid 3px;
       }
       p::after {
-        content: "";
         width: 100%;
         height: calc(100% - 30px);
-        position: absolute;
         right: -3px;
         top: 0;
         bottom: 0;
-        margin: auto;
         border-right: black solid 3px;
         border-left: black solid 3px;
       }
