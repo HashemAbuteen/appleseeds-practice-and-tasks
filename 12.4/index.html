@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cool Border</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .black-background {
+        padding: 5rem;
+        background-color: black;
+      }
+      p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding: 2rem;
+        color: white;
+        border: red solid 3px;
+        position: relative;
+      }
+      p::before {
+        content: "";
+        width: calc(100% - 30px);
+        height: 100%;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -3px;
+        margin: auto;
+        border-top: black solid 3px;
+        border-bottom: black solid 3px;
+      }
+      p::after {
+        content: "";
+        width: 100%;
+        height: calc(100% - 30px);
+        position: absolute;
+        right: -3px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border-right: black solid 3px;
+        border-left: black solid 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="black-background">
+        <p class="cool-border">Cool Border</p>
+      </div>
+    </main>
+  </body>
+</html>
