@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Animation</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      nav ul li {
+        display: block;
+        padding: 0.5rem;
+        position: relative;
+      }
+      nav ul li::after {
+        content: "";
+        height: 2px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        background-color: black;
+        width: 0;
+        transition: width 1s, opacity 1s;
+      }
+      nav ul li::before {
+        content: "";
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        background-color: black;
+        width: 0;
+        transition: width 1s, opacity 2s;
+      }
+      nav ul li:hover::before,
+      nav ul li:hover::after {
+        width: 100%;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </body>
+</html>
