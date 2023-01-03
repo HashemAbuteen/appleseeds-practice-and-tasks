@@ -1,0 +1,118 @@
+body {
+    background: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: #555 solid 2px;
+    border-radius: 50%;
+    animation-duration: 2s;
+    animation-name: circle-spinner;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border: #555 solid 2px;
+    border-right: orange solid 2px;
+}
+.circle-no-background {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-bottom: transparent solid 2px;
+    border-right: orange solid 2px;
+    border-radius: 50%;
+    animation-duration: 2s;
+    animation-name: circle-spinner;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes circle-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.circles-color-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+.circles-color-loading div {
+    width: 20px;
+    height: 20px;
+    background-color: #555;
+    border-radius: 50%;
+    animation-duration: 0.6s;
+    animation-name: circle-color;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+.circles-color-loading div:nth-child(2){
+    animation-delay: 0.2s;
+}
+.circles-color-loading div:nth-child(3){
+    animation-delay: 0.4s;
+}
+@keyframes circle-color {
+    0% {
+        background-color: orange;
+    }
+    100% {
+        background-color: #555;
+    }    
+}
+.circles-scale-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+.circles-scale-loading div {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    animation-duration: 0.6s;
+    animation-name: circle-scale;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+.circles-scale-loading div:nth-child(1){
+    animation-delay: 0s;
+}
+.circles-scale-loading div:nth-child(2){
+    animation-delay: 0.2s;
+}
+.circles-scale-loading div:nth-child(3){
+    animation-delay: 0.4s;
+}
+@keyframes circle-scale {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
